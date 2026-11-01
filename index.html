@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Amrot — Technology for Government Operations</title>
 <meta name="description" content="Amrot is a technology consultancy that automates and streamlines government operations — bridging GIS/Esri and enterprise business systems.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0F1E33; --ink-2:#1E3A5F; --ink-soft:#33465C;
+    --ink:#123536; --ink-2:#1D5558; --ink-soft:#34504F;
     --paper:#FDFCFA; --paper-2:#F3F5F8; --paper-3:#EEF2F6;
-    --accent:#16A34A; --accent-bright:#22C55E; --accent-deep:#0B7A42;
+    --accent:#14A37F; --accent-bright:#2DD4A0; --accent-deep:#0E7C66;
     --muted:#5B6B7F; --line:#E4E8ED;
     --serif:"Source Serif 4",Georgia,serif;
     --sans:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
@@ -35,7 +36,7 @@
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
   .brand{display:flex;align-items:center;gap:11px}
   .brand .mark{width:30px;height:30px;flex:0 0 auto}
-  .brand .word{font-family:var(--sans);font-weight:700;letter-spacing:.22em;font-size:18px;color:var(--ink)}
+  .brand .word{font-family:var(--sans);font-weight:700;letter-spacing:-.02em;font-size:24px;color:var(--ink);line-height:1}
   .navlinks{display:flex;gap:30px;align-items:center}
   .navlinks a{font-size:15px;font-weight:500;color:var(--ink-soft)}
   .navlinks a:hover{color:var(--ink)}
@@ -52,8 +53,8 @@
   .hero{position:relative;padding:96px 0 84px;overflow:hidden}
   .hero:before{content:"";position:absolute;inset:0;z-index:-1;
     background:
-      radial-gradient(1100px 520px at 78% -8%, rgba(34,197,94,.10), transparent 60%),
-      radial-gradient(900px 500px at 8% 110%, rgba(30,58,95,.08), transparent 55%);}
+      radial-gradient(1100px 520px at 78% -8%, rgba(45,212,160,.10), transparent 60%),
+      radial-gradient(900px 500px at 8% 110%, rgba(29,85,88,.08), transparent 55%);}
   .hero .eyebrow{margin-bottom:18px}
   .hero h1{font-size:clamp(34px,5.4vw,60px);max-width:16ch}
   .hero h1 .grad{color:var(--accent-deep)}
@@ -66,7 +67,7 @@
   /* split hero */
   .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:46px;align-items:center}
   .hero-art{position:relative}
-  .hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 34px 54px rgba(15,30,51,.14))}
+  .hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 34px 54px rgba(18,53,54,.14))}
   @keyframes pinpulse{0%{r:6;opacity:.55}70%{r:22;opacity:0}100%{opacity:0}}
   .pin-pulse{animation:pinpulse 2.6s ease-out infinite;transform-box:fill-box;transform-origin:center}
   @media(max-width:900px){
@@ -86,7 +87,7 @@
   .cards{margin-top:48px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
   .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 28px;
     transition:.2s;}
-  .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(15,30,51,.3);border-color:#d6dde5}
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(18,53,54,.3);border-color:#d6dde5}
   .card .ic{width:44px;height:44px;border-radius:11px;background:var(--paper-3);
     display:flex;align-items:center;justify-content:center;margin-bottom:18px}
   .card h3{font-size:21px}
@@ -116,13 +117,13 @@
   /* ORCSERVE */
   .product{background:var(--ink);color:#EAF0F6;border-radius:22px;padding:52px 48px;position:relative;overflow:hidden}
   .product:before{content:"";position:absolute;inset:0;
-    background:radial-gradient(700px 360px at 88% 0%, rgba(34,197,94,.22), transparent 62%)}
+    background:radial-gradient(700px 360px at 88% 0%, rgba(45,212,160,.22), transparent 62%)}
   .product .inner{position:relative;max-width:60ch}
   .product .eyebrow{color:var(--accent-bright)}
   .product h2{color:#fff;font-size:clamp(26px,3.4vw,38px);margin-top:14px}
   .product p{margin-top:16px;color:#B9C6D4;font-size:18px}
   .product .cta{margin-top:28px}
-  .product .btn-prod{background:var(--accent);color:#06240F;font-weight:700}
+  .product .btn-prod{background:var(--accent);color:#062A22;font-weight:700}
   .product .btn-prod:hover{background:var(--accent-bright)}
 
   /* ABOUT */
@@ -147,7 +148,7 @@
   /* FOOTER */
   footer{border-top:1px solid var(--line);padding:36px 0;background:var(--paper)}
   footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  footer .word{font-family:var(--sans);font-weight:700;letter-spacing:.22em;font-size:15px}
+  footer .word{font-family:var(--sans);font-weight:700;letter-spacing:-.02em;font-size:20px}
   footer .fnote{font-size:13.5px;color:var(--muted)}
 
   @media(max-width:820px){
@@ -165,13 +166,11 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Amrot home">
-      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <circle cx="7" cy="16" r="4.2" fill="#1E3A5F"/>
-        <circle cx="25" cy="16" r="4.2" fill="#22C55E"/>
-        <path d="M10.5 16 H21.5" stroke="#1E3A5F" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M7 16 a9 9 0 0 1 18 0" stroke="#22C55E" stroke-width="1.6" fill="none" opacity=".45"/>
+      <svg class="mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M32 6 L60 56 H4 Z" fill="#123536"/>
+        <path d="M15 56 L44 27 L49 36 L29 56 Z" fill="#14A37F"/>
       </svg>
-      <span class="word">AMROT</span>
+      <span class="word">amrot</span>
     </a>
     <nav class="navlinks">
       <a href="#what">What we do</a>
@@ -190,7 +189,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <div class="eyebrow">Technology consultancy · since 2003</div>
+        <div class="eyebrow">Technology consultancy · founded 2014</div>
         <h1>We automate and streamline the way <span class="grad">government gets work done.</span></h1>
         <p class="sub">Amrot brings two decades of architecture across two worlds that rarely meet in one
           practice — Esri/GIS and enterprise business systems — to modernize public-sector operations
@@ -212,18 +211,18 @@
           <!-- system chips (systems of record) -->
           <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
             <g>
-              <rect x="4" y="112" width="120" height="40" rx="11" fill="#17304D"/>
-              <circle cx="24" cy="132" r="4" fill="#22C55E"/>
+              <rect x="4" y="112" width="120" height="40" rx="11" fill="#164446"/>
+              <circle cx="24" cy="132" r="4" fill="#2DD4A0"/>
               <text x="38" y="137" fill="#DCE6F0">311 / CRM</text>
             </g>
             <g>
-              <rect x="4" y="214" width="120" height="40" rx="11" fill="#17304D"/>
-              <circle cx="24" cy="234" r="4" fill="#22C55E"/>
+              <rect x="4" y="214" width="120" height="40" rx="11" fill="#164446"/>
+              <circle cx="24" cy="234" r="4" fill="#2DD4A0"/>
               <text x="38" y="239" fill="#DCE6F0">Work orders</text>
             </g>
             <g>
-              <rect x="4" y="316" width="120" height="40" rx="11" fill="#17304D"/>
-              <circle cx="24" cy="336" r="4" fill="#22C55E"/>
+              <rect x="4" y="316" width="120" height="40" rx="11" fill="#164446"/>
+              <circle cx="24" cy="336" r="4" fill="#2DD4A0"/>
               <text x="38" y="341" fill="#DCE6F0">Assets / SQL</text>
             </g>
           </g>
@@ -243,7 +242,7 @@
           <line x1="188" y1="88" x2="548" y2="88" stroke="#E1E8EC"/>
 
           <!-- grid -->
-          <g stroke="#1E3A5F" stroke-width="1" opacity=".06">
+          <g stroke="#1D5558" stroke-width="1" opacity=".06">
             <line x1="248" y1="88" x2="248" y2="414"/><line x1="308" y1="88" x2="308" y2="414"/>
             <line x1="368" y1="88" x2="368" y2="414"/><line x1="428" y1="88" x2="428" y2="414"/>
             <line x1="488" y1="88" x2="488" y2="414"/>
@@ -252,16 +251,16 @@
           </g>
 
           <!-- zones -->
-          <path d="M236 128 L352 112 L372 196 L270 232 Z" fill="#16A34A" opacity=".08"/>
-          <path d="M388 230 L512 214 L520 320 L404 356 Z" fill="#1E3A5F" opacity=".06"/>
+          <path d="M236 128 L352 112 L372 196 L270 232 Z" fill="#14A37F" opacity=".08"/>
+          <path d="M388 230 L512 214 L520 320 L404 356 Z" fill="#1D5558" opacity=".06"/>
 
           <!-- route -->
-          <path d="M226 196 L300 250 L360 206 L452 300" fill="none" stroke="#1E3A5F" stroke-width="2.4"
+          <path d="M226 196 L300 250 L360 206 L452 300" fill="none" stroke="#1D5558" stroke-width="2.4"
                 stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
 
           <!-- pins -->
-          <circle class="pin-pulse" cx="300" cy="250" r="6" fill="#22C55E"/>
-          <g fill="#16A34A">
+          <circle class="pin-pulse" cx="300" cy="250" r="6" fill="#2DD4A0"/>
+          <g fill="#14A37F">
             <g transform="translate(226,196)"><path d="M0 0C-4 -7 -7.5 -10 -7.5 -15.5A7.5 7.5 0 1 1 7.5 -15.5C7.5 -10 4 -7 0 0Z"/><circle cx="0" cy="-15.5" r="3.1" fill="#fff"/></g>
             <g transform="translate(300,250)"><path d="M0 0C-4 -7 -7.5 -10 -7.5 -15.5A7.5 7.5 0 1 1 7.5 -15.5C7.5 -10 4 -7 0 0Z"/><circle cx="0" cy="-15.5" r="3.1" fill="#fff"/></g>
             <g transform="translate(360,206)"><path d="M0 0C-4 -7 -7.5 -10 -7.5 -15.5A7.5 7.5 0 1 1 7.5 -15.5C7.5 -10 4 -7 0 0Z"/><circle cx="0" cy="-15.5" r="3.1" fill="#fff"/></g>
@@ -271,8 +270,8 @@
           <!-- field/status chip on map -->
           <g font-family="Inter,sans-serif">
             <rect x="372" y="330" width="150" height="40" rx="11" fill="#fff" stroke="#E1E8EC"/>
-            <circle cx="392" cy="350" r="4.5" fill="#22C55E"/>
-            <text x="404" y="346" font-size="12" font-weight="600" fill="#0F1E33">Field crew · live</text>
+            <circle cx="392" cy="350" r="4.5" fill="#2DD4A0"/>
+            <text x="404" y="346" font-size="12" font-weight="600" fill="#123536">Field crew · live</text>
             <text x="404" y="360" font-size="10.5" fill="#5B6B7F">in sync with 311</text>
           </g>
         </svg>
@@ -281,7 +280,7 @@
 
     <div class="wrap">
       <div class="trust">
-        <div class="lab">Two decades of work for agencies including</div>
+        <div class="lab">Our principal's work has supported agencies including</div>
         <div class="names">
           <span>U.S. Dept. of Labor</span>
           <span>U.S. DOT</span>
@@ -305,10 +304,24 @@
         <p>We design, integrate, and automate the systems public agencies rely on — and we build to last,
           not to lock you in.</p>
       </div>
+      <div class="trust" style="margin-top:44px">
+        <div class="lab">Platforms we work with</div>
+        <div class="names">
+          <span>Esri ArcGIS</span>
+          <span>Microsoft 365</span>
+          <span>SharePoint</span>
+          <span>Power Platform</span>
+          <span>Azure</span>
+          <span>SQL Server</span>
+          <span>Nintex</span>
+          <span>AvePoint</span>
+          <span>ShareGate</span>
+        </div>
+      </div>
       <div class="cards">
         <div class="card">
           <div class="ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 7h7M13 7h7M4 12h16M4 17h7M13 17h7" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7" r="2" fill="#1E3A5F"/><circle cx="12" cy="17" r="2" fill="#1E3A5F"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 7h7M13 7h7M4 12h16M4 17h7M13 17h7" stroke="#14A37F" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7" r="2" fill="#1D5558"/><circle cx="12" cy="17" r="2" fill="#1D5558"/></svg>
           </div>
           <h3>Systems Integration</h3>
           <p>Connect the systems of record that run operations — 311, CRM, work management, enterprise
@@ -317,7 +330,7 @@
         </div>
         <div class="card">
           <div class="ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" stroke="#16A34A" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="#1E3A5F"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" stroke="#14A37F" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" fill="#1D5558"/></svg>
           </div>
           <h3>GIS &amp; Field Operations</h3>
           <p>Esri ArcGIS and Field Maps solutions that put the map to work — mobile field workflows,
@@ -326,7 +339,7 @@
         </div>
         <div class="card">
           <div class="ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z" stroke="#16A34A" stroke-width="2" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z" stroke="#14A37F" stroke-width="2" stroke-linejoin="round"/></svg>
           </div>
           <h3>Process Automation</h3>
           <p>Replace manual and legacy workflows with modern, maintainable solutions on the Microsoft
@@ -335,7 +348,7 @@
         </div>
         <div class="card">
           <div class="ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="#14A37F" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
           <h3>Data, Reporting &amp; Advisory</h3>
           <p>Turn operational data into decisions — reporting and analytics, solution architecture,
@@ -363,7 +376,7 @@
             <li>ArcGIS architecture, administration &amp; development</li>
             <li>Field Maps &amp; mobile operational workflows</li>
             <li>Geospatial solutions for DOL, DOT, FEMA &amp; NOAA</li>
-            <li>A direct working relationship with Esri engineering</li>
+            <li>Worked on site with Esri engineering in Redlands</li>
           </ul>
         </div>
         <div class="bworld">
@@ -390,14 +403,14 @@
       <div class="sec-head">
         <div class="eyebrow">Experience</div>
         <h2>A track record agencies trust.</h2>
-        <p>Federal and municipal, mission-critical, and recognized — delivered by a practice that's been
-          doing this since the early days of web GIS.</p>
+        <p>Federal and municipal, mission-critical, and recognized — led by a principal who has done this
+          work since the early days of web GIS.</p>
       </div>
       <div class="stats">
         <div class="stat"><div class="n"><b>20+</b></div><div class="l">Years designing &amp; integrating government systems</div></div>
-        <div class="stat"><div class="n"><b>8</b></div><div class="l">Federal &amp; municipal agencies served</div></div>
-        <div class="stat"><div class="n"><b>2</b></div><div class="l">National innovation awards (NOAA, DOL work)</div></div>
-        <div class="stat"><div class="n">Esri</div><div class="l">Direct engineering relationship, since the NOAA years</div></div>
+        <div class="stat"><div class="n"><b>12</b></div><div class="l">Years in business as Amrot (founded 2014)</div></div>
+        <div class="stat"><div class="n"><b>2</b></div><div class="l">Innovation awards for NOAA and DOL systems work</div></div>
+        <div class="stat"><div class="n"><b>3</b></div><div class="l">Years modernizing operations inside a Department of Public Works</div></div>
       </div>
     </div>
   </section>
@@ -413,7 +426,7 @@
             a configurable platform that bridges 311, CRM, and work-management systems to the field, live.
             Integration in weeks, not years.</p>
           <div class="cta">
-            <a class="btn btn-prod" href="https://orcserve.com" target="_blank" rel="noopener">Explore OrcServe →</a>
+            <a class="btn btn-prod" href="https://arayaek.github.io/orcserve-site/" target="_blank" rel="noopener">Explore OrcServe →</a>
           </div>
         </div>
       </div>
@@ -433,7 +446,10 @@
             spent his career using diverse technologies to automate and streamline how organizations work.</p>
           <p>That career began in web GIS in 2003 and runs through mission-critical systems for the U.S.
             Department of Labor, DOT, FEMA, NOAA, the Department of Justice, the National Science Foundation,
-            the U.S. Forest Service, and — today — the DC Department of Public Works.</p>
+            the U.S. Forest Service, and — today — the DC Department of Public Works. Before founding Amrot,
+            Araya was a System Development Scientist at ManTech International, where he received the
+            company's Top Innovation Award in 2009, and later a Senior SharePoint Consultant with General
+            Dynamics Information Technology.</p>
           <p>It's a deliberately small, senior practice: you work directly with the person who architects and
             builds the solution. No layers, no hand-offs — just objective, practical engineering that leaves
             your agency better off and in control of its own systems.</p>
@@ -461,10 +477,10 @@
       <h2>Let's modernize the work your agency does.</h2>
       <p>Tell us what you're trying to streamline. You'll hear back from the person who'd actually do the work.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="mailto:hello@amrot.com">hello@amrot.com</a>
-        <a class="btn btn-ghost" href="#orcserve">See OrcServe →</a>
+        <a class="btn btn-primary" href="mailto:info@amrot.com">info@amrot.com</a>
+        <a class="btn btn-ghost" href="tel:+12406870518">(240) 687-0518</a>
       </div>
-      <div class="loc">McLean, Virginia · Serving agencies nationwide</div>
+      <div class="loc">8340 Greensboro Drive, Suite 908, McLean, VA 22102 · Serving agencies nationwide</div>
     </div>
   </section>
 
@@ -472,8 +488,8 @@
 
 <footer>
   <div class="wrap">
-    <span class="word">AMROT</span>
-    <span class="fnote">© 2026 Amrot. OrcServe is an Amrot product.</span>
+    <span class="word">amrot</span>
+    <span class="fnote">© 2026 Amrot, Inc. · McLean, VA · info@amrot.com · OrcServe is an Amrot product.</span>
   </div>
 </footer>
 
